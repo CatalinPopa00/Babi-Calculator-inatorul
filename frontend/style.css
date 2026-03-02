@@ -187,6 +187,24 @@ body {
     transform: scale(0.98);
 }
 
+#nav-watchlist-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}
+
+#nav-watchlist-btn:hover {
+    background: rgba(16, 185, 129, 0.1);
+    transform: scale(1.05);
+}
+
 /* Hero Section Layout (Row 1) */
 .hero-layout {
     display: grid;
@@ -622,6 +640,21 @@ body {
     .hero-section {
         grid-template-columns: 1fr;
     }
+
+    .search-container {
+        flex-wrap: nowrap;
+    }
+
+    .autocomplete-wrapper {
+        flex: 3;
+    }
+
+    #search-btn {
+        flex: 1;
+        padding: 0.8rem 0;
+        text-align: center;
+        min-width: unset;
+    }
 }
 
 /* View Data Button */
@@ -647,6 +680,7 @@ body {
 .watchlist-view h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 /* --- Watchlist List View Redesign --- */
